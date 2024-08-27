@@ -1,0 +1,207 @@
+/* Importation de la police de caractères */
+@import url('https://fonts.cdnfonts.com/css/gg-sans-2');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Whitney', Arial, sans-serif;
+    background: url('../img/background-image.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'gg sans Normal';
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.LogoWithText {
+    position: absolute;
+    top: 47px;
+    left: 49px;
+    margin: 0; /* Assure qu'il n'y a pas d'espace autour de l'image */
+}
+
+.login-container {
+    background-color: #363636;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    max-width: 784px;
+    max-height: 408px;
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.login-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    width: 100%;
+}
+
+.login-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: -4px;
+    margin-top: 18px;
+}
+
+.login-header h1 {
+    font-size: 23px;
+    margin: 0;
+    padding: 0;
+}
+
+.login-header p {
+    font-size: 15.5px;
+    font-weight: 550;
+    color: #a3a7ac;
+    margin: 8px 0 20px 0;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    color: #a3a7ac;
+    font-size: 11px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    position: relative;
+    top: -0.14cm;
+    letter-spacing: 0.0215cm;
+}
+
+.input-group a{
+    color: #ff0000;
+    font-size: 11px;
+    margin-bottom: 5px;
+    position: relative;
+    top: -0.13875cm;
+    letter-spacing: 0.0215cm;
+    text-decoration: none;
+}
+
+
+.input-group input {
+    width: 89%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #1d1e20;
+    border-radius: 4px;
+    background-color: #1d1e20;
+    color: white;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.forgot-password {
+    margin-top: -2px;
+    position: relative;
+    top: -30px;
+}
+
+.forgot-password a {
+    color: #00aff4;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.login-button {
+    width: 89%;
+    padding: 10px;
+    margin-top: -20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #5865f2;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 600;
+    height: 45px;
+    font-family: 'gg sans Normal', sans-serif;
+}
+
+.login-button:hover {
+    background-color: #4752c4;
+}
+
+.qr-container {
+    width: 250px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.qr-code {
+    width: 176px;             /* Largeur du conteneur */
+    height: 176px;            /* Hauteur du conteneur */
+    background: url('../img/QR-CODE.png') center no-repeat; /* Définir l'image de fond sans répétition */
+    background-position: center; /* Centre l'image dans le conteneur */
+    background-color: white; /* Couleur de fond */
+    margin: 0 auto;          /* Centre le conteneur horizontalement */
+    border-radius: 5px;      /* Coins arrondis */
+    overflow: hidden;        /* Masque tout débordement */
+}
+
+
+
+.qr-container p {
+    color: #a3a7ac;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.qr-container p strong {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.qr-container p span {
+    display: block;
+    font-weight: bold;
+    color: #a3a7ac;
+}
+
+.signup-container {
+    margin-top: -58px;
+    text-align: center;
+}
+
+.signup {
+    color: #a3a7ac;
+    font-size: 12.7px;
+    margin-top: 28px;
+}
+
+.signup a {
+    color: #00aff4;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.error-message {
+    color: #f04747;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: none; /* Masqué par défaut */
+    text-align: left;
+}

